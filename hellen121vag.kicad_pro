@@ -1,5 +1,6 @@
 {
   "board": {
+    "3dviewports": [],
     "design_settings": {
       "defaults": {
         "board_outline_line_width": 0.381,
@@ -158,7 +159,15 @@
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": false
     },
-    "layer_presets": []
+    "ipc2581": {
+      "dist": "",
+      "distpn": "",
+      "internal_id": "",
+      "mfg": "",
+      "mpn": ""
+    },
+    "layer_presets": [],
+    "viewports": []
   },
   "boards": [],
   "cvpcb": {
@@ -384,7 +393,7 @@
   "net_settings": {
     "classes": [
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.21,
         "diff_pair_via_gap": 0.25,
@@ -398,10 +407,10 @@
         "track_width": 0.254,
         "via_diameter": 0.6,
         "via_drill": 0.3,
-        "wire_width": 6.0
+        "wire_width": 6
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -410,25 +419,15 @@
         "microvia_diameter": 0.508,
         "microvia_drill": 0.127,
         "name": "1.5A",
-        "nets": [
-          "/OUT_INJ1",
-          "/OUT_INJ2",
-          "/OUT_INJ3",
-          "/OUT_INJ4",
-          "/OUT_INJ5",
-          "/OUT_INJ6",
-          "/OUT_INJ7",
-          "/OUT_INJ8"
-        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.6,
         "via_diameter": 0.6,
         "via_drill": 0.3,
-        "wire_width": 6.0
+        "wire_width": 6
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -437,22 +436,15 @@
         "microvia_diameter": 0.508,
         "microvia_drill": 0.127,
         "name": "1A",
-        "nets": [
-          "/OUT_FUEL_CONSUM",
-          "/OUT_VVT1_1",
-          "/OUT_VVT1_2",
-          "/OUT_VVT2_B1",
-          "/OUT_VVT2_B2"
-        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.4,
         "via_diameter": 0.6,
         "via_drill": 0.3,
-        "wire_width": 6.0
+        "wire_width": 6
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -461,16 +453,15 @@
         "microvia_diameter": 0.508,
         "microvia_drill": 0.127,
         "name": "5A",
-        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 2.0,
         "via_diameter": 1.0,
         "via_drill": 0.5,
-        "wire_width": 6.0
+        "wire_width": 6
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.3,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -479,30 +470,92 @@
         "microvia_diameter": 0.508,
         "microvia_drill": 0.127,
         "name": "Crank",
-        "nets": [
-          "/IN_CRANK+",
-          "/IN_CRANK-"
-        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
         "via_drill": 0.3,
-        "wire_width": 6.0
+        "wire_width": 6
       }
     ],
     "meta": {
-      "version": 2
+      "version": 3
     },
-    "net_colors": null
+    "net_colors": null,
+    "netclass_assignments": null,
+    "netclass_patterns": [
+      {
+        "netclass": "1.5A",
+        "pattern": "/OUT_INJ1"
+      },
+      {
+        "netclass": "1.5A",
+        "pattern": "/OUT_INJ2"
+      },
+      {
+        "netclass": "1.5A",
+        "pattern": "/OUT_INJ3"
+      },
+      {
+        "netclass": "1.5A",
+        "pattern": "/OUT_INJ4"
+      },
+      {
+        "netclass": "1.5A",
+        "pattern": "/OUT_INJ5"
+      },
+      {
+        "netclass": "1.5A",
+        "pattern": "/OUT_INJ6"
+      },
+      {
+        "netclass": "1.5A",
+        "pattern": "/OUT_INJ7"
+      },
+      {
+        "netclass": "1.5A",
+        "pattern": "/OUT_INJ8"
+      },
+      {
+        "netclass": "1A",
+        "pattern": "/OUT_FUEL_CONSUM"
+      },
+      {
+        "netclass": "1A",
+        "pattern": "/OUT_VVT1_1"
+      },
+      {
+        "netclass": "1A",
+        "pattern": "/OUT_VVT1_2"
+      },
+      {
+        "netclass": "1A",
+        "pattern": "/OUT_VVT2_B1"
+      },
+      {
+        "netclass": "1A",
+        "pattern": "/OUT_VVT2_B2"
+      },
+      {
+        "netclass": "Crank",
+        "pattern": "/IN_CRANK+"
+      },
+      {
+        "netclass": "Crank",
+        "pattern": "/IN_CRANK-"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
       "gencad": "",
       "idf": "",
       "netlist": "",
+      "plot": "",
+      "pos_files": "",
       "specctra_dsn": "",
       "step": "",
+      "svg": "",
       "vrml": "gerber/hellen121vag.wrl"
     },
     "page_layout_descr_file": ""
