@@ -628,8 +628,8 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
-      "pos_files": "",
+      "plot": "gerber/",
+      "pos_files": "gerber/",
       "specctra_dsn": "",
       "step": "",
       "svg": "",
@@ -752,7 +752,7 @@
   "sheets": [
     [
       "45c1f041-3b7c-4036-abe9-e26621c05a73",
-      ""
+      "Root"
     ]
   ],
   "text_variables": {}
